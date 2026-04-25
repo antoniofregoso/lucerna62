@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lucerna 62 | Oficinas en venta en Colonia Juárez</title>
+    <meta
+      name="description"
+      content="Despachos 201, 202 y 203 en venta en Lucerna 62, Juárez, Cuauhtémoc, CDMX. Precio: $10,000.00 MXN. Oficinas con ubicación céntrica, acceso por elevador y espacios configurables."
+    >
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "#webpage",
+            "name": "Lucerna 62 | Oficinas en venta en Colonia Juárez",
+            "inLanguage": "es-MX",
+            "description": "Despachos 201, 202 y 203 en venta en Lucerna 62, Juárez, Cuauhtémoc, CDMX. Precio: $10,000.00 MXN. Oficinas con ubicación céntrica, acceso por elevador y espacios configurables.",
+            "mainEntity": {
+              "@id": "#lucerna62-oficinas"
+            }
+          },
+          {
+            "@type": "Place",
+            "@id": "#lucerna62-oficinas",
+            "name": "Lucerna 62",
+            "description": "Despachos 201, 202 y 203 en venta en Lucerna 62, Colonia Juárez, Alcaldía Cuauhtémoc, Ciudad de México.",
+            "image": [
+              "images/hero.jpeg",
+              "images/off_1.jpeg",
+              "images/off_2.jpeg",
+              "images/off_3.jpeg"
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Lucerna 62",
+              "addressLocality": "Cuauhtémoc",
+              "addressRegion": "Ciudad de México",
+              "postalCode": "06600",
+              "addressCountry": "MX"
+            },
+            "containedInPlace": {
+              "@type": "Place",
+              "name": "Colonia Juárez"
+            },
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Unidades disponibles",
+                "value": "Despachos 201, 202 y 203"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Acceso",
+                "value": "Elevador"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Uso sugerido",
+                "value": "Oficinas, consultorios o inversión patrimonial"
+              }
+            ],
+            "offers": {
+              "@id": "#lucerna62-oferta"
+            }
+          },
+          {
+            "@type": "Offer",
+            "@id": "#lucerna62-oferta",
+            "name": "Precio de venta de despachos en Lucerna 62",
+            "price": "10000.00",
+            "priceCurrency": "MXN",
+            "availability": "https://schema.org/InStock",
+            "businessFunction": "http://purl.org/goodrelations/v1#Sell",
+            "itemOffered": {
+              "@id": "#lucerna62-oficinas"
+            },
+            "areaServed": {
+              "@type": "Place",
+              "name": "Ciudad de México"
+            }
+          }
+        ]
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #153331;
+        --muted: #5f6f6b;
+        --line: #dbe3de;
+        --paper: #fbfaf5;
+        --wash: #edf6f2;
+        --teal: #0f766e;
+        --teal-dark: #0b4d48;
+        --blue: #0369a1;
+        --gold: #b58b48;
+        --white: #ffffff;
+        --shadow: 0 22px 70px rgba(21, 51, 49, .16);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Josefin Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 17px;
+        line-height: 1.55;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .page-shell {
+        overflow: hidden;
+      }
+
+      .container {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .topbar {
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 18px 0;
+        background: rgba(251, 250, 245, .88);
+        border-bottom: 1px solid rgba(219, 227, 222, .8);
+        backdrop-filter: blur(18px);
+      }
+
+      .topbar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+      }
+
+      .brand {
+        display: grid;
+        gap: 1px;
+      }
+
+      .brand strong {
+        font-family: "Cinzel", Georgia, serif;
+        font-size: clamp(1rem, 3vw, 1.35rem);
+        letter-spacing: 0;
+      }
+
+      .brand span {
+        color: var(--muted);
+        font-size: .78rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: var(--muted);
+        font-size: .95rem;
+        font-weight: 600;
+      }
+
+      .nav a {
+        transition: color .2s ease;
+      }
+
+      .nav a:hover,
+      .nav a:focus-visible {
+        color: var(--teal-dark);
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        padding: 13px 22px 11px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        background: var(--blue);
+        color: var(--white);
+        font-weight: 700;
+        line-height: 1;
+        cursor: pointer;
+        transition: transform .2s ease, background .2s ease, border-color .2s ease;
+      }
+
+      .button:hover,
+      .button:focus-visible {
+        background: #055981;
+        transform: translateY(-1px);
+      }
+
+      .button.secondary {
+        background: rgba(255, 255, 255, .12);
+        border-color: rgba(255, 255, 255, .46);
+      }
+
+      .button.secondary:hover,
+      .button.secondary:focus-visible {
+        background: rgba(255, 255, 255, .22);
+      }
+
+      .hero {
+        position: relative;
+        min-height: 92vh;
+        display: grid;
+        align-items: end;
+        padding: 128px 0 48px;
+        color: var(--white);
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(90deg, rgba(9, 34, 33, .88) 0%, rgba(9, 34, 33, .56) 44%, rgba(9, 34, 33, .18) 100%),
+          linear-gradient(0deg, rgba(9, 34, 33, .62) 0%, rgba(9, 34, 33, .08) 54%);
+        z-index: 1;
+      }
+
+      .hero img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        width: min(780px, 100%);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 0 18px;
+        color: rgba(255, 255, 255, .84);
+        font-size: .82rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 36px;
+        height: 1px;
+        background: var(--gold);
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        font-family: "Cinzel", Georgia, serif;
+        letter-spacing: 0;
+        line-height: 1.05;
+      }
+
+      h1 {
+        max-width: 760px;
+        font-size: clamp(3rem, 9vw, 6.8rem);
+      }
+
+      .hero-copy {
+        max-width: 640px;
+        margin: 22px 0 0;
+        color: rgba(255, 255, 255, .86);
+        font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 30px;
+      }
+
+      .hero-facts {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1px;
+        width: min(820px, 100%);
+        margin-top: 42px;
+        background: rgba(255, 255, 255, .22);
+        border: 1px solid rgba(255, 255, 255, .26);
+      }
+
+      .hero-facts div {
+        min-height: 108px;
+        padding: 20px;
+        background: rgba(9, 34, 33, .58);
+      }
+
+      .hero-facts strong {
+        display: block;
+        font-family: "Cinzel", Georgia, serif;
+        font-size: clamp(1.6rem, 4vw, 2.2rem);
+        line-height: 1;
+      }
+
+      .hero-facts .price-fact strong {
+        font-size: clamp(1.25rem, 2.8vw, 1.65rem);
+      }
+
+      .hero-facts span {
+        display: block;
+        margin-top: 8px;
+        color: rgba(255, 255, 255, .78);
+        font-weight: 600;
+      }
+
+      section {
+        padding: 86px 0;
+      }
+
+      .section-head {
+        display: grid;
+        grid-template-columns: minmax(0, .9fr) minmax(280px, .55fr);
+        gap: 42px;
+        align-items: end;
+        margin-bottom: 34px;
+      }
+
+      .kicker {
+        margin: 0 0 12px;
+        color: var(--teal);
+        font-size: .82rem;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        font-size: clamp(2.1rem, 5vw, 4rem);
+      }
+
+      .lead {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.08rem;
+      }
+
+      .feature-band {
+        background: var(--wash);
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .feature {
+        min-height: 178px;
+        padding: 24px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: var(--white);
+      }
+
+      .icon {
+        width: 42px;
+        height: 42px;
+        display: grid;
+        place-items: center;
+        margin-bottom: 24px;
+        border-radius: 50%;
+        background: #e5f4ef;
+        color: var(--teal);
+      }
+
+      .icon svg {
+        width: 21px;
+        height: 21px;
+        stroke: currentColor;
+        stroke-width: 1.9;
+        fill: none;
+      }
+
+      .feature h3 {
+        font-size: 1.08rem;
+        line-height: 1.25;
+      }
+
+      .feature p {
+        margin: 10px 0 0;
+        color: var(--muted);
+        font-size: .98rem;
+      }
+
+      .gallery {
+        background: var(--paper);
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: 1.2fr .8fr;
+        gap: 18px;
+      }
+
+      .photo {
+        position: relative;
+        min-height: 330px;
+        overflow: hidden;
+        border-radius: 6px;
+        background: #d9ded9;
+        box-shadow: var(--shadow);
+      }
+
+      .photo.large {
+        min-height: 560px;
+      }
+
+      .photo-stack {
+        display: grid;
+        gap: 18px;
+      }
+
+      .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .photo figcaption {
+        position: absolute;
+        left: 16px;
+        bottom: 16px;
+        max-width: calc(100% - 32px);
+        padding: 10px 13px 8px;
+        border-radius: 4px;
+        background: rgba(10, 31, 30, .76);
+        color: var(--white);
+        font-weight: 700;
+        backdrop-filter: blur(10px);
+      }
+
+      .location {
+        background: #102d2b;
+        color: var(--white);
+      }
+
+      .location-grid {
+        display: grid;
+        grid-template-columns: .85fr 1.15fr;
+        gap: 54px;
+        align-items: start;
+      }
+
+      .location .lead,
+      .location .kicker {
+        color: rgba(255, 255, 255, .78);
+      }
+
+      .address-panel {
+        padding: 32px;
+        border: 1px solid rgba(255, 255, 255, .18);
+        border-radius: 6px;
+        background: rgba(255, 255, 255, .07);
+      }
+
+      .address-panel p {
+        margin: 0;
+        color: rgba(255, 255, 255, .84);
+      }
+
+      .address-panel strong {
+        display: block;
+        margin-bottom: 14px;
+        font-family: "Cinzel", Georgia, serif;
+        font-size: 1.4rem;
+      }
+
+      .nearby {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .nearby span {
+        display: flex;
+        align-items: center;
+        min-height: 50px;
+        padding: 12px 14px;
+        border: 1px solid rgba(255, 255, 255, .16);
+        border-radius: 4px;
+        color: rgba(255, 255, 255, .84);
+        font-weight: 600;
+      }
+
+      .map-frame {
+        margin-top: 18px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, .18);
+        border-radius: 6px;
+        background: rgba(255, 255, 255, .08);
+      }
+
+      .map-frame iframe {
+        display: block;
+        width: 100%;
+        height: 360px;
+        border: 0;
+        filter: saturate(.9) contrast(1.02);
+      }
+
+      .contact {
+        background: var(--wash);
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: .82fr 1.18fr;
+        gap: 40px;
+        align-items: start;
+      }
+
+      .contact-copy {
+        position: sticky;
+        top: 108px;
+      }
+
+      .contact-list {
+        display: grid;
+        gap: 14px;
+        margin: 28px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .contact-list li {
+        display: grid;
+        grid-template-columns: 32px minmax(0, 1fr);
+        gap: 12px;
+        color: var(--muted);
+      }
+
+      .contact-list svg {
+        width: 22px;
+        height: 22px;
+        color: var(--teal);
+        stroke: currentColor;
+        stroke-width: 1.9;
+        fill: none;
+      }
+
+      .form-panel {
+        min-height: 520px;
+        padding: 30px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: var(--white);
+        box-shadow: var(--shadow);
+      }
+
+      .hs-form-frame {
+        min-height: 460px;
+      }
+
+      footer {
+        padding: 30px 0;
+        background: #0b211f;
+        color: rgba(255, 255, 255, .7);
+        font-size: .95rem;
+      }
+
+      footer .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+      }
+
+      @media (max-width: 920px) {
+        .nav a:not(.button) {
+          display: none;
+        }
+
+        .hero {
+          min-height: auto;
+          padding: 120px 0 38px;
+        }
+
+        .hero-facts,
+        .section-head,
+        .feature-grid,
+        .gallery-grid,
+        .location-grid,
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .feature-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .photo.large,
+        .photo {
+          min-height: 360px;
+        }
+
+        .contact-copy {
+          position: static;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .container {
+          width: min(100% - 24px, 1120px);
+        }
+
+        .topbar {
+          padding: 12px 0;
+        }
+
+        .brand span {
+          display: none;
+        }
+
+        .nav .button {
+          min-height: 40px;
+          padding: 11px 14px 9px;
+          font-size: .9rem;
+        }
+
+        .hero {
+          min-height: 94vh;
+          padding-top: 96px;
+        }
+
+        .hero::before {
+          background:
+            linear-gradient(90deg, rgba(9, 34, 33, .9) 0%, rgba(9, 34, 33, .68) 100%),
+            linear-gradient(0deg, rgba(9, 34, 33, .72) 0%, rgba(9, 34, 33, .12) 58%);
+        }
+
+        .hero-facts {
+          grid-template-columns: 1fr;
+          margin-top: 30px;
+        }
+
+        .hero-facts div {
+          min-height: 88px;
+        }
+
+        section {
+          padding: 62px 0;
+        }
+
+        .feature-grid,
+        .nearby {
+          grid-template-columns: 1fr;
+        }
+
+        .photo.large,
+        .photo {
+          min-height: 280px;
+        }
+
+        .form-panel,
+        .address-panel {
+          padding: 22px;
+        }
+
+        footer .container {
+          display: grid;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: .01ms !important;
+          animation-duration: .01ms !important;
+          animation-iteration-count: 1 !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar" aria-label="Navegación principal">
+        <div class="container">
+          <a class="brand" href="#inicio" aria-label="Lucerna 62 inicio">
+            <strong>Lucerna 62</strong>
+            <span>Despachos 201, 202 y 203</span>
+          </a>
+          <nav class="nav" aria-label="Secciones">
+            <a href="#oficinas">Oficinas</a>
+            <a href="#ubicacion">Ubicación</a>
+            <a class="button" href="#contacto">Agendar visita</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="inicio">
+        <section class="hero" aria-label="Lucerna 62">
+          <img src="images/hero.jpeg" alt="Fachada del edificio Lucerna 62 en la colonia Juárez">
+          <div class="container">
+            <div class="hero-content">
+              <p class="eyebrow">Oficinas en venta · Colonia Juárez</p>
+              <h1>Lucerna 62</h1>
+              <p class="hero-copy">
+                Tres despachos en el corazón de Cuauhtémoc para empresas, consultorios o inversión patrimonial en una ubicación consolidada.
+              </p>
+              <div class="hero-actions">
+                <a class="button" href="#contacto">Solicitar información</a>
+                <a class="button secondary" href="#oficinas">Ver espacios</a>
+              </div>
+              <div class="hero-facts" aria-label="Datos principales">
+                <div>
+                  <strong>201</strong>
+                  <span>Despacho disponible</span>
+                </div>
+                <div>
+                  <strong>202</strong>
+                  <span>Despacho disponible</span>
+                </div>
+                <div>
+                  <strong>203</strong>
+                  <span>Despacho disponible</span>
+                </div>
+                <div class="price-fact">
+                  <strong>$10,000.00</strong>
+                  <span>Precio MXN</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature-band" id="oficinas">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <p class="kicker">Oportunidad comercial</p>
+                <h2>Espacios funcionales en una zona con alta conectividad.</h2>
+              </div>
+              <p class="lead">
+                Lucerna 62 reúne ubicación, acceso y distribución flexible para equipos compactos o servicios profesionales que necesitan presencia céntrica.
+              </p>
+            </div>
+
+            <div class="feature-grid">
+              <article class="feature">
+                <div class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V8l6-4 6 4v12M9 20v-6h6v6M9 10h.01M15 10h.01"></path></svg>
+                </div>
+                <h3>Tres despachos en el mismo nivel</h3>
+                <p>Unidades 201, 202 y 203 para evaluar como bloque de oficinas en una dirección céntrica.</p>
+              </article>
+
+              <article class="feature">
+                <div class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 21s7-4.8 7-11a7 7 0 0 0-14 0c0 6.2 7 11 7 11Z"></path><circle cx="12" cy="10" r="2.4"></circle></svg>
+                </div>
+                <h3>Dirección estratégica</h3>
+                <p>Juárez, Cuauhtémoc, 06600 CDMX, cerca de corredores corporativos, culturales y de transporte.</p>
+              </article>
+
+              <article class="feature">
+                <div class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M7 21h10M8 17h8M10 17V5a2 2 0 0 1 4 0v12M6 9h12"></path></svg>
+                </div>
+                <h3>Acceso por elevador</h3>
+                <p>Recepción de edificio y circulación práctica para clientes, colaboradores y proveedores.</p>
+              </article>
+
+              <article class="feature">
+                <div class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M4 10h16M10 4v16"></path></svg>
+                </div>
+                <h3>Distribución adaptable</h3>
+                <p>Privados con cancelería y áreas abiertas listas para remodelar, equipar o rentabilizar.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="gallery" aria-label="Galería de oficinas">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <p class="kicker">Galería</p>
+                <h2>Conoce el edificio y los interiores disponibles.</h2>
+              </div>
+              <p class="lead">
+                Las fotografías muestran el acceso, recepción y espacios interiores para dimensionar la operación de los despachos.
+              </p>
+            </div>
+
+            <div class="gallery-grid">
+              <figure class="photo large">
+                <img src="images/off_1.jpeg" alt="Recepción y elevadores del edificio Lucerna 62">
+                <figcaption>Recepción y elevadores</figcaption>
+              </figure>
+              <div class="photo-stack">
+                <figure class="photo">
+                  <img src="images/off_2.jpeg" alt="Área de despachos con cancelería de cristal">
+                  <figcaption>Área de despachos</figcaption>
+                </figure>
+                <figure class="photo">
+                  <img src="images/off_3.jpeg" alt="Interiores de oficina con privados y luz natural">
+                  <figcaption>Privados y áreas abiertas</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="location" id="ubicacion">
+          <div class="container location-grid">
+            <div>
+              <p class="kicker">Ubicación</p>
+              <h2>Una dirección central para clientes y equipos.</h2>
+            </div>
+            <div class="address-panel">
+              <strong>Lucerna 62</strong>
+              <p>Despachos 201, 202 y 203, Colonia Juárez, Alcaldía Cuauhtémoc, 06600 Ciudad de México.</p>
+              <div class="nearby" aria-label="Ventajas de la zona">
+                <span>Conectividad con Reforma e Insurgentes</span>
+                <span>Entorno de oficinas, servicios y cultura</span>
+                <span>Acceso a transporte público y movilidad urbana</span>
+                <span>Zona consolidada para inversión comercial</span>
+              </div>
+              <div class="map-frame" aria-label="Mapa de Lucerna 62 en Google Maps">
+                <iframe
+                  title="Mapa de Lucerna 62, Juárez, Cuauhtémoc, CDMX"
+                  src="https://www.google.com/maps?q=Lucerna%2062%2C%20Ju%C3%A1rez%2C%20Cuauht%C3%A9moc%2C%2006600%20Ciudad%20de%20M%C3%A9xico&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact" id="contacto">
+          <div class="container contact-grid">
+            <div class="contact-copy">
+              <p class="kicker">Contacto</p>
+              <h2>Agenda una visita a Lucerna 62.</h2>
+              <p class="lead">
+                Comparte tus datos y un asesor te contactará para confirmar disponibilidad, condiciones de venta y horarios de recorrido.
+              </p>
+              <ul class="contact-list" aria-label="Información para solicitar visita">
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-4.8 7-11a7 7 0 0 0-14 0c0 6.2 7 11 7 11Z"></path><circle cx="12" cy="10" r="2.4"></circle></svg>
+                  <span>Lucerna 62, Juárez, Cuauhtémoc, CDMX</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z"></path><path d="m3 7 9 6 9-6"></path></svg>
+                  <span>Respuesta de asesor comercial para disponibilidad, precio de $10,000.00 MXN y recorridos</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-panel" aria-label="Formulario de contacto">
+              <script src="https://js.hsforms.net/forms/embed/7682479.js" defer></script>
+              <div
+                class="hs-form-frame"
+                data-region="na1"
+                data-form-id="4ac6ce47-a049-4605-90db-47d1ee886cbb"
+                data-portal-id="7682479"
+              ></div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="container">
+          <span>Lucerna 62 · Oficinas en venta</span>
+          <span>Colonia Juárez, Cuauhtémoc, 06600 CDMX</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
